@@ -1,0 +1,12 @@
+{
+  "name": "rainbow-console",
+  "version": "1.0.0",
+  "description": "A logger to satisfy your RGB needs.",
+  "main": "index.js",
+  "author": "Divya Mamgai <divyamamgai21@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "randomstring": "^1.1.5"
+  }
+}
