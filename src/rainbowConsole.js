@@ -4,7 +4,9 @@ module.exports = (shallModifyGlobal) => {
   const consoleLogger = console.log;
   const logger = function (...args) {
     for (const argIndex in args) {
-      args[argIndex] = colors.rainbow(args[argIndex]);
+      if (typeof args[argIndex] === 'string') {
+        args[argIndex] = colors.rainbow(args[argIndex]);
+      }
     }
     consoleLogger.apply(this, args);
   };

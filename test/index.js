@@ -10,3 +10,8 @@ for (let i = 1; i <= 20; i++) {
 for (let i = 1; i <= 20; i++) {
   rainbowConsole(randomstring.generate());
 }
+
+// Check if non-string are not breaking
+rainbowConsole({
+  [randomstring.generate()]: randomstring.generate()
+});
